@@ -35,4 +35,13 @@ class Decorate:
             LOG.info(e)
             raise SystemExit(e)
 
+    def copy_images(self,individuals_name,results_dir,person_picture_collection):
+        for person in individuals_name:
+            dest = results_dir + "/" + person
+            os.makedirs(results_dir + "/" + person)
+            for picture in person_picture_collection[person]:
+                shutil.copy(picture, dest)
+
+
+
 
