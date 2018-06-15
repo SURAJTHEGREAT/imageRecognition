@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import os
-from logger.log import getLogger
+from logger_suraj.log import getLogger
 
 __all__ = [
     'create_logger'
